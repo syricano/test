@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> Rock, Paper, Scissor, Lizard, Spock Game</header>
+
+    <main>
+        <h2> Game Rules</h2>
+        <p> Each hand signal wins against 2 of the other signals.<br>
+            Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, <br>
+            Spock smashes scissors, scissors decapitates lizard, lizard eats paper,<br>
+            Paper disproves Spock, Spock vaporizes rock, and rock crushes scissors.<br>
+            Whoever throws the winning signal wins!</p>
+        
+            <div class="choice-area">
+                <div class="choice" id="paper">
+                    <img src="assets/images/paper.png" alt="paper" width="125px">
+
+                </div>
+                <div class="choice" id="rock">
+                    <img src="assets/images/rock.png" alt="rock" width="125px">
+
+                </div>
+                <div class="choice" id="lizard">
+                    <img src="assets/images/lizard.png" alt="lizard" width="125px">
+
+                </div>
+                <div class="choice" id="Spock">
+                    <img src="assets/images/spock.png" alt="spock" width="125px">
+
+                </div>
+                <div class="choice" id="Scissor">
+                    <img src="assets/images/scissor.png" alt="Scissor" width="125px">
+
+                </div>
+                
+
+            </div>
+
+            <div class="display-area">
+                <div class="display" id="player-display">
+                    <!--an image is to be created through java with player selection-->
+
+                </div>
+                <div class="display" id="Computer-display">
+                    <!--an image is to be created through java with computer selection-->
+
+
+                </div>
+            </div>
+
+
+            <div class="score-area">
+                <div class="score" id="player-score">
+                    <h4>Player Score <span>0</span></h4>
+
+                </div>
+                <div>
+                    <h4>VS</h4>
+                </div>
+                <div class="score" id="computer-score">
+                    <h4>Computer Score <span>0</span></h4>
+
+                </div>
+                
+
+            </div>
+
+
+
+
+
+            <div class="result">
+                <h3>
+                    <!--Player or Computer wins message to be created by Java-->
+                </h3>
+
+                
+
+            </div>
+
+            <div class="reset" id="reset" onclick="window.location.reload()">
+                <button>Play Again</button>
+
+            </div>
+            <div class="share" id="share">
+                <button>Share Score with Friends</button>
+
+            </div>
+
+
+
+        
+
+
+    </main>
+    <footer>
+        
+    </footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

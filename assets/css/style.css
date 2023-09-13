@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    
+    width: 75%;
+    text-align: center;
+
+}
+header{
+    font-size: 2rem;
+}
+h2{
+    font-size:1rem ;
+}
+.choice-area{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    
+}
+.score-area{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+}
