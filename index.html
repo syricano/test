@@ -7,84 +7,93 @@
     <title>Document</title>
 </head>
 <body>
-    <header> Rock, Paper, Scissor, Lizard, Spock Game</header>
+    <header> Rock, Paper, Scissor</header>
 
     <main>
-        <h2> Game Rules</h2>
-        <p> Each hand signal wins against 2 of the other signals.<br>
-            Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, <br>
-            Spock smashes scissors, scissors decapitates lizard, lizard eats paper,<br>
-            Paper disproves Spock, Spock vaporizes rock, and rock crushes scissors.<br>
-            Whoever throws the winning signal wins!</p>
+        <!--
+        <button class="rules"> Game Rules</button>
+        <span> Each hand signal wins against 2 of the other signals.<br>
+             Scissors cuts paper, paper covers rock, rock crushes lizard,<br>
+             lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, <br>
+              lizard eats paper, paper disproves Spock, Spock vaporizes rock, and rock crushes scissors.<br>
+             Whoever throws the winning signal wins!</span>
         
-            <div class="choice-area">
-                <div class="choice" id="paper">
-                    <img src="assets/images/paper.png" alt="paper" width="125px">
+        -->  
 
-                </div>
-                <div class="choice" id="rock">
-                    <img src="assets/images/rock.png" alt="rock" width="125px">
-
-                </div>
-                <div class="choice" id="lizard">
-                    <img src="assets/images/lizard.png" alt="lizard" width="125px">
-
-                </div>
-                <div class="choice" id="Spock">
-                    <img src="assets/images/spock.png" alt="spock" width="125px">
-
-                </div>
-                <div class="choice" id="Scissor">
-                    <img src="assets/images/scissor.png" alt="Scissor" width="125px">
-
-                </div>
-                
-
-            </div>
-
-            <div class="display-area">
-                <div class="display" id="player-display">
-                    <!--an image is to be created through java with player selection-->
-
-                </div>
-                <div class="display" id="Computer-display">
-                    <!--an image is to be created through java with computer selection-->
-
-
-                </div>
-            </div>
+           
 
 
             <div class="score-area">
-                <div class="score" id="player-score">
-                    <h4>Player Score <span>0</span></h4>
+                <div class="score" >
+                    <h5>Player Score <span id="player-score">0</span></h5>
 
                 </div>
                 <div>
-                    <h4>VS</h4>
+                    <h5>VS</h5>
                 </div>
-                <div class="score" id="computer-score">
-                    <h4>Computer Score <span>0</span></h4>
+                <div class="score" >
+                    <h5>Computer Score <span id="computer-score">0</span></h5>
 
                 </div>
                 
 
             </div>
+          
+            
+            <div>
+                <h5>Make a choice </h5>
+            </div>
+
+            <div class="choice-area">
+               
+                <div>
+                    <img src="assets/images/rock.png" onclick="setPlayerChoice ('Rock')" id="rock" alt="rock" width="125px">
+
+                </div>
+
+                <div>
+                    <img src="assets/images/paper.png" onclick="setPlayerChoice ('Paper')" id="paper" alt="paper" width="125px">
+
+                </div>
+                             
+                <div>
+                    <img src="assets/images/scissor.png" onclick="setPlayerChoice ('Scissor')" id="scissor" alt="scissor" width="125px">
+
+                </div>
+                
+
+            </div>
+            <div class="selection-area">
+                <div>
+                    <h5 id="p-display">You Chose :
+                        
+                        
+
+                        
+                    </h5>
+
+                </div>
+                <div>
+                    <h5 id="c-display"> Computer Chose:
+                       
+                    </h5>
+                    
 
 
-
-
-
+                </div>
+            </div>
             <div class="result">
-                <h3>
+                <h5>
+                    <span id="result">
                     <!--Player or Computer wins message to be created by Java-->
-                </h3>
+                    </span>
+                </h5>
 
                 
 
             </div>
 
-            <div class="reset" id="reset" onclick="window.location.reload()">
+            <div class="reset" id="reset" onclick="runGame()">
                 <button>Play Again</button>
 
             </div>
@@ -100,7 +109,8 @@
 
     </main>
     <footer>
-        
+        <h3> Copyright reserved for Anass Muhammad Ali</h3>
+
     </footer>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

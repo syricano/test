@@ -1,15 +1,29 @@
 body{
     font-family: 'Roboto Mono', monospace, sans-serif;
-    
-    width: 75%;
+    display: contents;
     text-align: center;
 
 }
+main{
+    margin: 5px;
+    padding: 5px;
+}
 header{
-    font-size: 2rem;
+    font-size: 150%;
 }
 h2{
-    font-size:1rem ;
+    font-size:100% ;
+}
+.score-area{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.selection-area{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 .choice-area{
     display: flex;
@@ -18,11 +32,17 @@ h2{
     justify-content: center;
     
 }
-.score-area{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
 
+
+
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 75%;
+    
 
 }
