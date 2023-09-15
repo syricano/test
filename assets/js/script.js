@@ -6,8 +6,17 @@ var computerSelection = document.getElementById("c-display");
 var playerScore = 0; // Initialize player score
 var computerScore = 0; // Initialize computer score
 
-/** Declare player choice */
-var playerChoice;
+// Add event listeners to the set player choices:
+
+document.getElementById("rock").addEventListener("click", function() {
+    setPlayerChoice("rock");
+});
+document.getElementById("paper").addEventListener("click", function() {
+    setPlayerChoice("paper");
+});
+document.getElementById("scissor").addEventListener("click", function() {
+    setPlayerChoice("scissors");
+});
 
 function setPlayerChoice(choice) {
     playerChoice = choice;
@@ -22,12 +31,11 @@ function setComputerChoice() {
     computerSelection.innerHTML = `Computer chose: ${computerChoice}`;
     return computerChoice;
 }
-
-/** Game console */
+ // Set computer choice before comparing
+ var computerChoice = setComputerChoice();
 function runGame() {
-    // Setting computer choice
-    var computerChoice = setComputerChoice();
-    /** winning conditions */
+   
+
     if (playerChoice === computerChoice) {
         result.innerHTML = "Same same";
     } else if (
