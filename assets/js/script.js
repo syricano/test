@@ -1,4 +1,5 @@
 // Declaring constants & possible choices
+
 var choices = ["rock", "paper", "scissors"];
 var result = document.getElementById("result");
 var playerSelection = document.getElementById("p-display");
@@ -31,10 +32,10 @@ function setComputerChoice() {
     computerSelection.innerHTML = `Computer chose: ${computerChoice}`;
     return computerChoice;
 }
- // Set computer choice before comparing
- var computerChoice = setComputerChoice();
+ 
 function runGame() {
-   
+   // Set computer choice before comparing
+ var computerChoice = setComputerChoice();
 
     if (playerChoice === computerChoice) {
         result.innerHTML = "Same same";
@@ -51,7 +52,25 @@ function runGame() {
         computerScore++; // Increment computer's score
         document.getElementById("computer-score").innerHTML = computerScore; // Update computer's score display
     }
-}
 
-/** running game on load */
-window.onload= runGame();
+  
+    
+}
+  /** Set Share button */
+  var shareV=document.getElementById("share");
+  shareV.addEventListener("click", shareMe);
+
+  function shareMe() {
+      let shareIt = {
+          text: "I'm playing a Rock, Paper, Scissor Game",
+          url: window.location.href
+      };
+  
+      if (navigator.share) {
+          navigator.share(shareIt)
+            
+      } else {
+          // Fallback for browsers that don't support the Web Share API
+          alert("Sorry, your browser does not support sharing. You can manually copy and share the URL.");
+      }
+  }
